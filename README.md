@@ -1,5 +1,7 @@
 # write-int
 
+[![npm version](https://badge.fury.io/js/write-int.svg)](https://badge.fury.io/js/write-int)
+
 Convert integer numbers to their written form.
 
 Inspired by [js-written-number](https://github.com/yamadapc/js-written-number)
