@@ -75,14 +75,18 @@ test('en: negative', function(assert) {
 	assert.equal(writeInt(-8000000000001), 'negative eight trillion and one');
 	assert.equal(writeInt(-9000000000000), 'negative nine trillion');
 
-	assert.equal(writeInt(-1e2), 'negative one hundred');
-
 	assert.end();
 });
 
 test('en: other', function(assert) {
+	assert.equal(writeInt(11, {lang: "en"}), 'eleven');
+
 	assert.equal(writeInt("93"), 'ninety-three');
+
+	assert.equal(writeInt(1e2), 'one hundred');
 	assert.equal(writeInt("1e2"), 'one hundred');
+
+	assert.equal(writeInt(-1e2), 'negative one hundred');
 	assert.equal(writeInt("-1e2"), 'negative one hundred');
 
 	// Acceptable because Number(arg) returns a number primitive
