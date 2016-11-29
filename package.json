@@ -9,6 +9,10 @@
   },
   "author": "Costava",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Costava/write-int.git"
+  },
   "keywords": [
     "write",
     "int",
