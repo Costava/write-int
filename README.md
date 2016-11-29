@@ -27,6 +27,8 @@ It also works to simply reference in a `script` tag:
 English is the default language. Numbers supported between -1e66 and 1e66 exclusive (1 followed by 66 zeros or 1 * 10^66).
 ```JavaScript
 writeInt(123);// => 'one hundred and twenty-three'
+
+writeInt(123, {lang: 'en'});// => 'one hundred and twenty-three'
 ```
 
 ### Spanish
