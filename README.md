@@ -75,6 +75,8 @@ Example:
 ```JavaScript
 writeInt(11);// => 'eleven'
 writeInt("11");// => 'eleven'
+
+writeInt(1e2);// => 'one hundred'
 writeInt("1e2");// => 'one hundred'
 
 writeInt(11, {lang: 'es'});// => 'once'
@@ -84,6 +86,7 @@ writeInt(100, {lang: 'de', einhundert: true});// => 'einhundert'
 
 writeInt();// => null
 writeInt({});// => null
+writeInt("a");// => null
 writeInt('foo');// => null
 ```
 
