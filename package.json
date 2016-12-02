@@ -1,6 +1,6 @@
 {
   "name": "write-int",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Convert integer numbers to their written form.",
   "main": "src/index.js",
   "scripts": {

@@ -4,7 +4,7 @@ var bigInt = require('big-integer');
  * writeInt
  * Return `number` written out in language `options.lang`.
  * `options` is optional. Default language is english
- * Version: 0.0.1
+ * Version: 0.0.2
  * @param {number|string} number
  * - type string means base 10 number as string
  * @param {object} [options]
