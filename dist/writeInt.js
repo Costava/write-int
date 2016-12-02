@@ -64,7 +64,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * writeInt
 	 * Return `number` written out in language `options.lang`.
 	 * `options` is optional. Default language is english
-	 * Version: 0.0.1
+	 * Version: 0.0.2
 	 * @param {number|string} number
 	 * - type string means base 10 number as string
 	 * @param {object} [options]
@@ -121,15 +121,11 @@ return /******/ (function(modules) { // webpackBootstrap
 		var remaining = number;
 
 		while (remaining.notEquals(0)) {
-			// console.log(remaining);
-
 			var digit = remaining.mod(10).valueOf();
 
 			remaining = remaining.divide(10);
 
 			digits.push(digit);
-
-			// console.log(digits);
 		}
 
 		return digits;
@@ -169,13 +165,7 @@ return /******/ (function(modules) { // webpackBootstrap
 			return false;
 		}
 
-		// if (typeof number != 'number' || isNaN(number)) {
-		// 	return false;
-		// }
-
 		return writeInt[lang].MIN.lesser(num) && writeInt[lang].MAX.greater(num);
-
-		// return writeInt[lang].MIN < number && number < writeInt[lang].MAX;
 	};
 
 	/**
@@ -2429,7 +2419,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  * @returns {string}
 	  */
 		zero: function zero(options) {
-			return this.base[0];
+			return "no";
 		},
 
 		/**
