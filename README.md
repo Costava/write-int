@@ -9,7 +9,7 @@ Inspired by [js-written-number](https://github.com/yamadapc/js-written-number)
 ## Usage
 ### Install with npm
 ```
-npm install --save write-int
+npm install write-int --save
 ```
 
 And require it where needed:
